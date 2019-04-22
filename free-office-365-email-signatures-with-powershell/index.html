@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-AU"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Free Office 365 email signatures with PowerShell – Phil Margetts</title><link rel="dns-prefetch" href="//s.w.org"><link rel="stylesheet" id="wp-block-library-css" href="../wp-includes/css/dist/block-library/style.min.css" type="text/css" media="all"><link rel="stylesheet" id="genericons-css" href="../wp-content/themes/independent-publisher-2-wpcom/genericons/genericons.css" type="text/css" media="all"><link rel="stylesheet" id="independent-publisher-2-style-css" href="../wp-content/themes/independent-publisher-2-wpcom/style.css" type="text/css" media="all"><link rel="stylesheet" id="independent-publisher-2-block-style-css" href="../wp-content/themes/independent-publisher-2-wpcom/css/blocks.css" type="text/css" media="all"><script type="text/javascript" src="../wp-includes/js/jquery/jquery.js"></script><script type="text/javascript" src="../wp-includes/js/jquery/jquery-migrate.min.js"></script><style type="text/css" id="syntaxhighlighteranchor"></style><link rel="icon" href="../wp-content/uploads/2018/04/cropped-TwmbaScholar032018_dm_392-2-32x32.jpg" sizes="32x32"><link rel="icon" href="../wp-content/uploads/2018/04/cropped-TwmbaScholar032018_dm_392-2-192x192.jpg" sizes="192x192"><link rel="apple-touch-icon-precomposed" href="../wp-content/uploads/2018/04/cropped-TwmbaScholar032018_dm_392-2-180x180.jpg"><meta name="msapplication-TileImage" content="../wp-content/uploads/2018/04/cropped-TwmbaScholar032018_dm_392-2-270x270.jpg"></head><body class="post-template-default single single-post postid-75 single-format-standard wp-embed-responsive">
+<div id="page" class="hfeed site">
+<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+<div id="hero-header" class="site-hero-section">
+<header id="masthead" class="site-header" role="banner"><div class="inner">
+<div class="site-branding">
+<a class="site-logo-link" href="../index.html">
+<img alt="" class="site-logo-image no-grav" width="80" height="80" src="https://secure.gravatar.com/avatar/9bc396c869aaf97ed80fb82762e597ba?s=160&d=mm&r=g"></a>
+<p class="site-title"><a href="../index.html" rel="home">Phil Margetts</a></p>
+<p class="site-description">IT Pro in EDU</p>
+</div>
+<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" id="primary-menu-button">
+Menu </button>
+</div>
+</header></div>
+<nav id="site-navigation" class="main-navigation" role="navigation"><div class="menu-header-container"><ul id="primary-menu" class="menu"><li id="menu-item-132" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-132"><a href="../http://OFFLINEZIP.wpsho">Home</a></li>
+<li id="menu-item-41" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-41"><a href="../about/index.html">About</a></li>
+<li id="menu-item-223" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-223"><a href="../categories/index.html">Categories</a>
+<ul class="sub-menu"><li id="menu-item-224" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-224"><a href="../category/general/index.html">General</a></li>
+<li id="menu-item-227" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-227"><a href="../category/devices/index.html">Devices</a></li>
+<li id="menu-item-228" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-228"><a href="../category/office-365/index.html">Office 365</a></li>
+<li id="menu-item-225" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-225"><a href="../category/how-to/index.html">How-to</a></li>
+<li id="menu-item-226" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-226"><a href="../category/powershell/index.html">PowerShell</a></li>
+</ul></li>
+<li id="menu-item-109" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-109"><a href="../resources/index.html">Resources</a></li>
+<li id="menu-item-110" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-110"><a href="https://twitter.com/philmargetts_">Twitter</a></li>
+</ul></div> </nav><div id="content-wrapper" class="content-wrapper">
+<div id="content" class="site-content">
+<div id="primary" class="content-area">
+<main id="main" class="site-main" role="main"><article id="post-75" class="post-75 post type-post status-publish format-standard hentry category-how-to category-office-365 category-powershell"><header class="entry-header"><h1 class="entry-title">Free Office 365 email signatures with PowerShell</h1> </header><div class="entry-meta">
+<span class="byline">
+<a href="../author/philm/index.html" title="Posts by Phil Margetts" rel="author">Phil Margetts</a> </span>
+<span class="cat-links">
+<a href="../category/how-to/index.html" rel="category tag">How-to</a>, <a href="../category/office-365/index.html" rel="category tag">Office 365</a>, <a href="../category/powershell/index.html" rel="category tag">PowerShell</a> </span>
+<span class="published-on">
+<time class="entry-date published" datetime="2018-05-10T14:01:51+00:00">May 10, 2018</time><time class="updated" datetime="2019-01-11T07:50:09+00:00">January 11, 2019</time></span>
+<span class="word-count">4 Minutes</span> </div>
+<div class="entry-content">
+<p>There are plenty of paid options out there to manage Office 365 email signatures, but what if you could do it for free?… PowerShell to the rescue! This post is collation and adaptation of what I’ve found online when implementing staff signatures in my environment. <em>Note: the focus here will be on applying signatures in the Outlook Web App, although these signatures can be deployed to Outlook desktop applications when placed in the right userprofile folder etc. Might do an update down the track.</em></p>
+<p><span id="more-75"></span></p>
+<h2>Build signatures</h2>
+<p>The first part of this script builds an .htm file for each user’s signature. AD users are specified by OU in this example; alternatively, the script could be modified to search a group. The specific AD user attributes used in the script will depend upon which fields info is stored in. Reference <a href="https://msdn.microsoft.com/en-us/library/ms675090(v=vs.85).aspx">here</a> or <a href="http://www.kouti.com/tables/userattributes.htm">here</a> for user attribute reference information that you can substitute as required.</p>
+<p>The .htm file is built using the defined attributes for each user. The HTML code can be modified to suit your specific design requirements.</p>
+<h2>Push signatures to Office 365</h2>
+<p>The second part pushes the generated signatures to Office 365. In this instance, the password for the service user is stored in a text file. In reality, the connection to Exchange Online can be initiated however you like. The script will then search the save location for the signature files, and attempt to set the signature for each file/user present.</p>
+<p>The code below – once modified for your environment – can be run as a Scheduled Task to update signatures as required. Your logging functionality of choice can also be added. Feel free to comment/Tweet your feedback. Enjoy!</p>
+<pre class="brush: powershell; title: ; notranslate" title="">
+#set folder location for files, the folder must already exist
+$save_location = 'c:\folder'
+$email_domain = '@my.domain'
+
+#--------------------------------------------------------------------
+#BUILD SIGNATURE FILES
+Import-Module ActiveDirectory
+
+#OU to search for users
+$users = Get-ADUser -filter * -searchbase "OU=staff,DC=my,DC=domain" -Properties *
+
+#retrieve and set whatever AD properties or other variables you require
+foreach ($user in $users) {
+ $full_name = Get-ADUser $user -Properties personalTitle | % { "$($_.personalTitle) $($_.Name)" } #using personalTitle to hold user salutation, ie Mrs., Mr., etc.
+ $account_name = "$($User.sAMAccountName)"
+ $job_title = "$($User.description)"
+ $company = "$($User.office)"
+ $tagline = "we're a great school" #your tagline here
+ $web = '<a href="mysite.com">mysite.com</a>' #your site here
+ $phone = '<a href="tel:+123456789">123456798</a>' #your number here
+ $address = '1 Organisation Way<br />City, STATE 1234' #your address here
+ $banner = "google.com/logo.png" #your banner image file here
+ $bannerlink = "https://google.com/" #your banner's clickable link here
+ $disclaimer = "CAUTION..." #your disclaimer here
+
+#construct and write the html signature file
+ $output_file = $save_location + $account_name + ".htm"
+ LogWrite "Now attempting to create signature html file for $full_name"
+ #customise the HTML below to create your desired layout
+ "<span style=`"font-family: calibri,sans-serif;`"><strong>" + $full_name + "</strong><br /><em>" + $job_title + "</em><br /><br /><div style=font-size:90%>" + $company + "<br /></div><div style=font-size:80%><em>" + $tagline + "</em><br />", $address + "<br /><strong>w: </strong>" + $web + " | <strong>p: </strong>", $phone +"<br />", "</span><br /><br /></div><a href=`"" + $bannerlink + "`"><img alt=`"email banner`" src=`"" + $banner + "`"/><a/><br /><br /><div style=`"font-size:70%;`">" + $disclaimer + "</div>" | Out-File -Encoding utf8 $output_file
+ }
+
+#--------------------------------------------------------------------
+#PUSH SIGNATURES TO OFFICE 365
+
+#connect to O365 tenant
+$MSEOLadminuser = "<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="88fdfbedfac8e5f1ece7e5e9e1e6a6e7e6e5e1ebfae7fbe7eefca6ebe7e5">[email protected]</a>"
+$MSEOLPasswordFile = ("C:\path\$MSEOLadminuser-ExchangeOnline.txt")
+ if (!(Test-Path -Path $MSEOLPasswordFile))
+ {
+ LogWrite "You don't have an admin password assigned for $MSEOLadminuser, please provide the password followed with enter below:"
+ Read-Host -assecurestring | convertfrom-securestring | out-file $MSEOLpasswordfile
+ }
+$MSEOLpassword = get-content $MSEOLPasswordFile | convertto-securestring -ErrorAction Stop
+$MSEOLcredentials = new-object -typename System.Management.Automation.PSCredential -argumentlist $MSEOLadminuser,$MSEOLpassword -ErrorAction Stop
+$MSEOLSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -credential $MSEOLcredentials -Authentication Basic -AllowRedirection -ErrorAction Stop
+
+Import-PSSession $MSEOLSession -ErrorAction Stop 
+ 
+#Get a list of all the filenames in the target folder
+$sig_files = Get-ChildItem -Path $save_location
+ 
+#Now push the html to the users signature
+foreach ($item in $sig_files) {
+ 
+ $user_name = $($item.Basename) + $email_domain
+ $filename = $save_location + $($item.Basename) + ".htm"
+ 
+ LogWrite "Now attempting to set signature for $user_name"
+ set-mailboxmessageconfiguration -identity $user_name -signaturehtml (get-content $filename) -autoaddsignature $true 
+}
+ 
+#disconnect O365 connection
+Remove-PSSession $MSEOLSession
+
+
+</pre>
+</div>
+<div class="entry-footer">
+</div>
+<div class="entry-author-wrapper">
+<div class="entry-author">
+<div class="author-avatar">
+<img alt="" src="https://secure.gravatar.com/avatar/9bc396c869aaf97ed80fb82762e597ba?s=80&d=mm&r=g" srcset="https://secure.gravatar.com/avatar/9bc396c869aaf97ed80fb82762e597ba?s=160&d=mm&r=g 2x" class="avatar avatar-80 photo" height="80" width="80"></div>
+<div class="author-heading">
+<h2 class="author-title">Published by <span class="author-name">Phil Margetts</span></h2>
+</div>
+<p class="author-bio">
+<a class="author-link" href="../author/philm/index.html" rel="author">
+View all posts by Phil Margetts </a>
+</p>
+</div>
+<div class="site-posted-on">
+<strong>Published</strong>
+<time class="entry-date published" datetime="2018-05-10T14:01:51+00:00">May 10, 2018</time><time class="updated" datetime="2019-01-11T07:50:09+00:00">January 11, 2019</time></div>
+</div>
+</article><nav class="navigation post-navigation" role="navigation"><h2 class="screen-reader-text">Post navigation</h2>
+<div class="nav-links"><div class="nav-previous"><a href="../active-directory-password-reset-by-csv-file/index.html" rel="prev"><span class="meta-nav screen-reader-text">Previous Post</span> Active directory password reset by CSV file</a></div><div class="nav-next"><a href="../why-ibought-an-ipad/index.html" rel="next"><span class="meta-nav screen-reader-text">Next Post</span> Why iBought an iPad</a></div></div>
+</nav></main></div>
+</div>
+<footer id="colophon" class="site-footer" role="contentinfo"><div class="site-info">
+<a href="https://wordpress.org/">Proudly powered by WordPress</a>
+<span class="sep"> | </span>
+Theme: Independent Publisher 2 by <a href="http://raamdev.com/" rel="designer">Raam Dev</a>. </div>
+</footer></div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript" src="../wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shCore.js"></script><script type="text/javascript" src="../wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushPowerShell.js"></script><script type="text/javascript">
+	(function(){
+		var corecss = document.createElement('link');
+		var themecss = document.createElement('link');
+		var corecssurl = "http://OFFLINEZIP.wpsho/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/styles/shCore.css?ver=3.0.9b";
+		if ( corecss.setAttribute ) {
+				corecss.setAttribute( "rel", "stylesheet" );
+				corecss.setAttribute( "type", "text/css" );
+				corecss.setAttribute( "href", corecssurl );
+		} else {
+				corecss.rel = "stylesheet";
+				corecss.href = corecssurl;
+		}
+		document.getElementsByTagName("head")[0].insertBefore( corecss, document.getElementById("syntaxhighlighteranchor") );
+		var themecssurl = "http://OFFLINEZIP.wpsho/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/styles/shThemeDefault.css?ver=3.0.9b";
+		if ( themecss.setAttribute ) {
+				themecss.setAttribute( "rel", "stylesheet" );
+				themecss.setAttribute( "type", "text/css" );
+				themecss.setAttribute( "href", themecssurl );
+		} else {
+				themecss.rel = "stylesheet";
+				themecss.href = themecssurl;
+		}
+		//document.getElementById("syntaxhighlighteranchor").appendChild(themecss);
+		document.getElementsByTagName("head")[0].insertBefore( themecss, document.getElementById("syntaxhighlighteranchor") );
+	})();
+	SyntaxHighlighter.config.strings.expandSource = '+ expand source';
+	SyntaxHighlighter.config.strings.help = '?';
+	SyntaxHighlighter.config.strings.alert = 'SyntaxHighlighter\n\n';
+	SyntaxHighlighter.config.strings.noBrush = 'Can\'t find brush for: ';
+	SyntaxHighlighter.config.strings.brushNotHtmlScript = 'Brush wasn\'t configured for html-script option: ';
+	SyntaxHighlighter.defaults['pad-line-numbers'] = false;
+	SyntaxHighlighter.defaults['toolbar'] = false;
+	SyntaxHighlighter.all();
+
+	// Infinite scroll support
+	if ( typeof( jQuery ) !== 'undefined' ) {
+		jQuery( function( $ ) {
+			$( document.body ).on( 'post-load', function() {
+				SyntaxHighlighter.highlight();
+			} );
+		} );
+	}
+</script><script type="text/javascript" src="../wp-content/themes/independent-publisher-2-wpcom/js/navigation.js"></script><script type="text/javascript" src="../wp-content/themes/independent-publisher-2-wpcom/js/independent-publisher-2.js"></script><script type="text/javascript" src="../wp-content/themes/independent-publisher-2-wpcom/js/skip-link-focus-fix.js"></script></body></html>

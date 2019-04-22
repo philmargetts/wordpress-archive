@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Office 365 &#8211; Phil Margetts</title>
+	<atom:link href="http://OFFLINEZIP.wpshocategory/office-365/feed/" rel="self" type="application/rss+xml" />
+	<link>https://OFFLINEZIP.wpsho</link>
+	<description>IT Pro in EDU</description>
+	<lastBuildDate>Wed, 06 Feb 2019 10:29:58 +0000</lastBuildDate>
+	<language>en-AU</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.0.4</generator>
+
+<image>
+	<url>http://OFFLINEZIP.wpshowp-content/uploads/2018/04/cropped-TwmbaScholar032018_dm_392-2-32x32.jpg</url>
+	<title>Office 365 &#8211; Phil Margetts</title>
+	<link>https://OFFLINEZIP.wpsho</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Journey from Gmail to Office 365 (ITMEL post)</title>
+		<link>http://OFFLINEZIP.wpshojourney-from-gmail-to-office-365-itmel-post/</link>
+		<pubDate>Wed, 06 Feb 2019 10:29:58 +0000</pubDate>
+		<dc:creator><![CDATA[Phil Margetts]]></dc:creator>
+				<category><![CDATA[General]]></category>
+		<category><![CDATA[Office 365]]></category>
+		<category><![CDATA[PowerShell]]></category>
+		<category><![CDATA[education]]></category>
+		<category><![CDATA[g suite]]></category>
+		<category><![CDATA[gmail]]></category>
+		<category><![CDATA[microsoft teams]]></category>
+		<category><![CDATA[office 365]]></category>
+		<category><![CDATA[outlook]]></category>
+		<category><![CDATA[teams]]></category>
+		<category><![CDATA[technology]]></category>
+
+		<guid isPermaLink="false">http://OFFLINEZIP.wpsho?p=230</guid>
+		<description><![CDATA[This&#160;post&#160;was&#160;originally&#160;a&#160;reply&#160;to&#160;an&#160;email&#160;thread&#160;on the&#160;ITMEL&#160;mailing&#160;list,&#160;discussing&#160;Google&#160;to&#160;Microsoft&#160;migrations&#160;and&#160;Microsoft&#160;Teams.&#160;Ended&#160;up&#160;being&#160;somewhat&#160;comprehensive&#160;so&#160;figured&#160;I&#8217;d&#160;record&#160;it&#160;(slightly edited) here.&#160;Perhaps&#160;may&#160;discuss&#160;some&#160;of&#160;these&#160;topics&#160;more&#160;at&#160;some&#160;stage.   All Essay incoming&#160;😊 will take the opportunity to summarise our journey so far here (Darling Downs Christian School, February 2019). A few years ago everyone was on G Suite Gmail, but weren&#8217;t touching Drive/Docs. I think to truly benefit from the G Suite/Docs ecosystem you have to more or less &#8230; <a href="http://OFFLINEZIP.wpshojourney-from-gmail-to-office-365-itmel-post/" class="more-link">Continue reading <span class="screen-reader-text">Journey from Gmail to Office 365 (ITMEL post)</span> <span class="meta-nav">&#8594;</span></a>]]></description>
+				<content:encoded><![CDATA[
+<p><em>This&nbsp;post&nbsp;was&nbsp;originally&nbsp;a&nbsp;reply&nbsp;to&nbsp;an&nbsp;email&nbsp;thread&nbsp;on the&nbsp;<a href="http://itmel.org">ITMEL</a>&nbsp;mailing&nbsp;list,&nbsp;discussing&nbsp;Google&nbsp;to&nbsp;Microsoft&nbsp;migrations&nbsp;and&nbsp;Microsoft&nbsp;Teams.&nbsp;Ended&nbsp;up&nbsp;being&nbsp;somewhat&nbsp;comprehensive&nbsp;so&nbsp;figured&nbsp;I&#8217;d&nbsp;record&nbsp;it&nbsp;(slightly edited) here.&nbsp;Perhaps&nbsp;may&nbsp;discuss&nbsp;some&nbsp;of&nbsp;these&nbsp;topics&nbsp;more&nbsp;at&nbsp;some&nbsp;stage.</em></p>
+
+
+<p><span id="more-230"></span></p>
+<p> </p>
+
+
+<p>All</p>
+
+
+
+<p>Essay incoming&nbsp;<img src="https://s.w.org/images/core/emoji/11/72x72/1f60a.png" alt="😊" class="wp-smiley" style="height: 1em; max-height: 1em;" /> will take the opportunity to summarise our journey so far here (Darling Downs Christian School, February 2019).</p>
+
+
+
+<p>A few years ago everyone was on G Suite Gmail, but weren&#8217;t touching Drive/Docs. I think to truly benefit from the G Suite/Docs ecosystem you have to more or less abandon traditional MS Office file formats in some sense. A difficult thing, given MS&#8217; monopoly in this area.</p>
+
+
+
+<p>Being tied to these file formats makes O365 attractive to many I think (whether or not the tools/services are always better&#8230;) and as SDA Schools South QLD we&#8217;ve been moving towards more O365 over the past few years. Last year migrated all DDCS mailboxes from Gmail to exchange online. Used an IMAP pull, although from memory had to use <a href="https://github.com/jay0lee/GAM/wiki">GAM </a>(third-party G Suite management) to enable IMAP on all mailboxes. On-prem to online exchange should be easier.</p>
+
+
+
+<p>Most staff using the OWA with few complaints (since everyone was used to web-based Gmail). The older OWA felt a bit sluggish at times but &#8220;The new Outlook&#8221; much improved imo.&nbsp;<a rel="noreferrer noopener" href="https://eur02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fphilmargetts.com%2Ffree-office-365-email-signatures-with-powershell%2F&amp;data=02%7C01%7C%7C4fd16ab6c75c423e065008d68bd56345%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C636850145961590013&amp;sdata=uQ7tj9egh8IB%2F4M2iPhKjd%2Bkft%2Fq0EK2Um3LaaDeksk%3D&amp;reserved=0" target="_blank">Signatures automated with PowerShell</a>&nbsp;and no mucking around with desktop Outlook application (MFA issues, etc).</p>
+
+
+
+<p>We&#8217;ve also jumped on the Teams bandwagon. You&#8217;d wonder how what is fundamentally a chat application could consume so much RAM/CPU&nbsp;<img src="https://s.w.org/images/core/emoji/11/72x72/1f60a.png" alt="😊" class="wp-smiley" style="height: 1em; max-height: 1em;" />&nbsp;but it does play nice with the whole O365 suite. The experience has been consistent with&nbsp;MS&nbsp;philosophy of&nbsp;ship first/fix later but is becoming more mature.&nbsp;Good for staff notices and people love the ability to reply/discuss. Have also started leveraging the attached OneNote Staff Notebooks for meeting agendas/minutes. Like [name redacted], often surprised by the people who&#8217;ll get on board with the collaboration/instant messaging. Have seen some great development in change acceptance at our small school.</p>
+
+
+
+<p>PowerShell from SIS to manage membership would be great in a larger environment, but we&#8217;ve done more simple O365 dynamic groups based on AD attributes.<br>Still a bit old school here with file shares, but waiting until we can get a robust O365 backup strategy in place before putting everything in Teams/SharePoint. Some folks on MITIE have talked about&nbsp;<a rel="noreferrer noopener" href="https://eur02.safelinks.protection.outlook.com/?url=https%3A%2F%2Ffoldr.io%2F&amp;data=02%7C01%7C%7C4fd16ab6c75c423e065008d68bd56345%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C636850145961600024&amp;sdata=aoqp4n9asphQrsjGs%2F6nDypsQxXb8HydBfJlllu4tQs%3D&amp;reserved=0" target="_blank">https://foldr.io/</a>&nbsp;for multiple storage locations.</p>
+
+
+
+<p>Also looking at SDS last year; pretty big in US schools. Adventist Schools Australia currently using MAZE which also isn&#8217;t natively supported. We&#8217;ve been testing some SQL queries that generate CSV&#8217;s direct from the database to import into SDS.&nbsp;End goal is to have a Team (+ OneNote Class Notebook) for every class automatically generated, whether the teacher wants to use it or not. Also early days. Teams has great potential in classroom discussion/communication I think.</p>
+
+
+
+<p>Forms great for quizzes/surveys, Sway really flexible presentation/publication tool, OneNote is great (I describe as unlimited digital butcher&#8217;s paper!) and teachers love Class Notebooks (new Win10 app syncs much better than 2016).</p>
+
+
+
+<p>Like so many tech companies today, I think the power of O365 is in the (buzzword alert) ecosystem, with the many tools interacting together. As a general rule, I think Google build less but more robust products, whereas Microsoft are continuously improving a whole lot more (sometimes buggy) things.&nbsp;</p>
+
+
+
+<p>Hope that&#8217;s helpful/interesting. Happy to field any questions on/off list.&nbsp;I don&#8217;t pretend to have all the answers so always keen to see what others have done. I believe Sheldon College may have done some cool stuff with Teams.</p>
+
+
+
+<p>Phil</p>
+
+
+
+<p><em>Feel&nbsp;free&nbsp;to&nbsp;discuss&nbsp;on&nbsp;Twitter&nbsp;or&nbsp;reach&nbsp;out&nbsp;if&nbsp;you&nbsp;have&nbsp;any&nbsp;questions&nbsp;or&nbsp;comments.</em></p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Office 365 suite &#8211; switch to Monthly channel</title>
+		<link>http://OFFLINEZIP.wpshooffice-365-suite-switch-to-monthly-channel/</link>
+		<pubDate>Fri, 23 Nov 2018 22:01:08 +0000</pubDate>
+		<dc:creator><![CDATA[Phil Margetts]]></dc:creator>
+				<category><![CDATA[General]]></category>
+		<category><![CDATA[Office 365]]></category>
+
+		<guid isPermaLink="false">http://OFFLINEZIP.wpsho?p=182</guid>
+		<description><![CDATA[On my personal machine, I use Office 365 licensed by my university. Upon recently performing a fresh install of the OS, I noticed that their ICT department has set the default update channel to Semi-annual. Here&#8217;s how to switch to the more frequent Monthly channel on your local machine. Referring to Microsoft&#8217;s article here, I &#8230; <a href="http://OFFLINEZIP.wpshooffice-365-suite-switch-to-monthly-channel/" class="more-link">Continue reading <span class="screen-reader-text">Office 365 suite &#8211; switch to Monthly channel</span> <span class="meta-nav">&#8594;</span></a>]]></description>
+				<content:encoded><![CDATA[<p>On my personal machine, I use Office 365 licensed by my university. Upon recently performing a fresh install of the OS, I noticed that their ICT department has set the default update channel to Semi-annual. Here&#8217;s how to switch to the more frequent Monthly channel <em>on your local machine</em>.</p>
+<p><span id="more-182"></span></p>
+<p>Referring to Microsoft&#8217;s article <a href="https://support.microsoft.com/en-au/help/3185078/how-to-switch-from-semi-annual-channel-to-monthly-channel">here</a>, I created the following batch script and ran <strong>as Administrator</strong>.</p>
+<pre class="x-hidden-focus">setlocal
+reg query HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\ClickToRun\Configuration\ /v CDNBaseUrl
+if %errorlevel%==0 (goto SwitchChannel) else (goto End)
+:SwitchChannel
+reg add HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\ClickToRun\Configuration /v CDNBaseUrl /t REG_SZ /d "http://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60" /f
+reg delete HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\ClickToRun\Configuration /v UpdateUrl /f
+reg delete HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\ClickToRun\Configuration /v UpdateToVersion /f
+reg delete HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\ClickToRun\Updates /v UpdateToVersion /f
+reg delete HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Office\16.0\Common\OfficeUpdate\ /f
+:End
+Endlocal</pre>
+<p>I then forced an update from Word/Excel/etc: <strong>File &gt; Account</strong>, then <strong>Update Options &gt; Update Now</strong> under the Product Information section.</p>
+<p><em>Note: stay up to date with Microsoft products <a href="https://www.google.com.au/search?rlz=1C1GCEA_enAU823AU823&amp;ei=GHT4W6HSHoT8rQHQ1IH4Bg&amp;q=windows+10+1809+data+loss&amp;oq=windows+10+1809+data+loss&amp;gs_l=psy-ab.3..0l2.6741.7898..8542...0.0..0.189.1787.0j11......0....1..gws-wiz.......0i7i30.yJIw4Ul1FnU">at your own risk</a>.</em></p>
+<p><strong>For IT admins</strong></p>
+<p>If using <span style="text-decoration: underline;">Office Deployment Tool</span>, set the channel in the configuration.xml (<a href="https://docs.microsoft.com/en-us/deployoffice/overview-of-update-channels-for-office-365-proplus#configure-the-update-channel-to-be-used-by-office-365-proplus">MS docs</a>) &#8211; <em>note: at time of writing, the &#8220;default&#8221; configuration script (<a href="https://support.office.com/en-us/article/use-the-office-offline-installer-f0a85fe7-118f-41cb-a791-d59cef96ad1c?ui=en-US&amp;rs=en-US&amp;ad=US#OfficePlans=signinorgid" target="_blank" rel="noopener">suggested by Microsoft here</a>) still installs the 2016 versions of Office applications; if you want the &#8220;Office 365/2019 feature set&#8221; versions use the Monthly channel</em></p>
+<p>To change the <span style="text-decoration: underline;">default download</span> channel from the <span style="text-decoration: underline;">user portal</span>:</p>
+<p><img class="alignnone wp-image-184" src="http://OFFLINEZIP.wpshowp-content/uploads/2018/11/settingsorgprofile.png" alt="" width="226" height="241" /></p>
+<p><img class="alignnone wp-image-185 " src="http://OFFLINEZIP.wpshowp-content/uploads/2018/11/releasepref.png" alt="" width="582" height="161" srcset="http://OFFLINEZIP.wpshowp-content/uploads/2018/11/releasepref.png 770w, http://OFFLINEZIP.wpshowp-content/uploads/2018/11/releasepref-300x83.png 300w, http://OFFLINEZIP.wpshowp-content/uploads/2018/11/releasepref-768x212.png 768w" sizes="(max-width: 582px) 100vw, 582px" /></p>
+<p>Choose a release track according to your bravery&#8230;</p>
+<p><img class="alignnone wp-image-186 size-full" src="http://OFFLINEZIP.wpshowp-content/uploads/2018/11/releasetrack.png" alt="" width="492" height="228" srcset="http://OFFLINEZIP.wpshowp-content/uploads/2018/11/releasetrack.png 492w, http://OFFLINEZIP.wpshowp-content/uploads/2018/11/releasetrack-300x139.png 300w" sizes="(max-width: 492px) 100vw, 492px" /></p>
+<p>&nbsp;</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Free Office 365 email signatures with PowerShell</title>
+		<link>http://OFFLINEZIP.wpshofree-office-365-email-signatures-with-powershell/</link>
+		<pubDate>Thu, 10 May 2018 04:01:51 +0000</pubDate>
+		<dc:creator><![CDATA[Phil Margetts]]></dc:creator>
+				<category><![CDATA[How-to]]></category>
+		<category><![CDATA[Office 365]]></category>
+		<category><![CDATA[PowerShell]]></category>
+
+		<guid isPermaLink="false">http://OFFLINEZIP.wpsho?p=75</guid>
+		<description><![CDATA[There are plenty of paid options out there to manage Office 365 email signatures, but what if you could do it for free?&#8230; PowerShell to the rescue! This post is collation and adaptation of what I&#8217;ve found online when implementing staff signatures in my environment. Note: the focus here will be on applying signatures in the &#8230; <a href="http://OFFLINEZIP.wpshofree-office-365-email-signatures-with-powershell/" class="more-link">Continue reading <span class="screen-reader-text">Free Office 365 email signatures with PowerShell</span> <span class="meta-nav">&#8594;</span></a>]]></description>
+				<content:encoded><![CDATA[<p>There are plenty of paid options out there to manage Office 365 email signatures, but what if you could do it for free?&#8230; PowerShell to the rescue! This post is collation and adaptation of what I&#8217;ve found online when implementing staff signatures in my environment. <em>Note: the focus here will be on applying signatures in the Outlook Web App, although these signatures can be deployed to Outlook desktop applications when placed in the right userprofile folder etc. Might do an update down the track.</em></p>
+<p><span id="more-75"></span></p>
+<h2>Build signatures</h2>
+<p>The first part of this script builds an .htm file for each user&#8217;s signature. AD users are specified by OU in this example; alternatively, the script could be modified to search a group. The specific AD user attributes used in the script will depend upon which fields info is stored in. Reference <a href="https://msdn.microsoft.com/en-us/library/ms675090(v=vs.85).aspx">here</a> or <a href="http://www.kouti.com/tables/userattributes.htm">here</a> for user attribute reference information that you can substitute as required.</p>
+<p>The .htm file is built using the defined attributes for each user. The HTML code can be modified to suit your specific design requirements.</p>
+<h2>Push signatures to Office 365</h2>
+<p>The second part pushes the generated signatures to Office 365. In this instance, the password for the service user is stored in a text file. In reality, the connection to Exchange Online can be initiated however you like. The script will then search the save location for the signature files, and attempt to set the signature for each file/user present.</p>
+<p>The code below &#8211; once modified for your environment &#8211; can be run as a Scheduled Task to update signatures as required. Your logging functionality of choice can also be added. Feel free to comment/Tweet your feedback. Enjoy!</p>
+<pre class="brush: powershell; title: ; notranslate">
+
+#set folder location for files, the folder must already exist
+$save_location = 'c:\folder'
+$email_domain = '@my.domain'
+
+#--------------------------------------------------------------------
+#BUILD SIGNATURE FILES
+Import-Module ActiveDirectory
+
+#OU to search for users
+$users = Get-ADUser -filter * -searchbase &quot;OU=staff,DC=my,DC=domain&quot; -Properties *
+
+#retrieve and set whatever AD properties or other variables you require
+foreach ($user in $users) {
+ $full_name = Get-ADUser $user -Properties personalTitle | % { &quot;$($_.personalTitle) $($_.Name)&quot; } #using personalTitle to hold user salutation, ie Mrs., Mr., etc.
+ $account_name = &quot;$($User.sAMAccountName)&quot;
+ $job_title = &quot;$($User.description)&quot;
+ $company = &quot;$($User.office)&quot;
+ $tagline = &quot;we're a great school&quot; #your tagline here
+ $web = '&amp;lt;a href=&quot;mysite.com&quot;&amp;gt;mysite.com&amp;lt;/a&amp;gt;' #your site here
+ $phone = '&amp;lt;a href=&quot;tel:+123456789&quot;&amp;gt;123456798&amp;lt;/a&amp;gt;' #your number here
+ $address = '1 Organisation Way&amp;lt;br /&amp;gt;City, STATE 1234' #your address here
+ $banner = &quot;google.com/logo.png&quot; #your banner image file here
+ $bannerlink = &quot;https://google.com/&quot; #your banner's clickable link here
+ $disclaimer = &quot;CAUTION...&quot; #your disclaimer here
+
+#construct and write the html signature file
+ $output_file = $save_location + $account_name + &quot;.htm&quot;
+ LogWrite &quot;Now attempting to create signature html file for $full_name&quot;
+ #customise the HTML below to create your desired layout
+ &quot;&amp;lt;span style=`&quot;font-family: calibri,sans-serif;`&quot;&amp;gt;&amp;lt;strong&amp;gt;&quot; + $full_name + &quot;&amp;lt;/strong&amp;gt;&amp;lt;br /&amp;gt;&amp;lt;em&amp;gt;&quot; + $job_title + &quot;&amp;lt;/em&amp;gt;&amp;lt;br /&amp;gt;&amp;lt;br /&amp;gt;&amp;lt;div style=font-size:90%&amp;gt;&quot; + $company + &quot;&amp;lt;br /&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div style=font-size:80%&amp;gt;&amp;lt;em&amp;gt;&quot; + $tagline + &quot;&amp;lt;/em&amp;gt;&amp;lt;br /&amp;gt;&quot;, $address + &quot;&amp;lt;br /&amp;gt;&amp;lt;strong&amp;gt;w: &amp;lt;/strong&amp;gt;&quot; + $web + &quot; | &amp;lt;strong&amp;gt;p: &amp;lt;/strong&amp;gt;&quot;, $phone +&quot;&amp;lt;br /&amp;gt;&quot;, &quot;&amp;lt;/span&amp;gt;&amp;lt;br /&amp;gt;&amp;lt;br /&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;a href=`&quot;&quot; + $bannerlink + &quot;`&quot;&amp;gt;&amp;lt;img alt=`&quot;email banner`&quot; src=`&quot;&quot; + $banner + &quot;`&quot;/&amp;gt;&amp;lt;a/&amp;gt;&amp;lt;br /&amp;gt;&amp;lt;br /&amp;gt;&amp;lt;div style=`&quot;font-size:70%;`&quot;&amp;gt;&quot; + $disclaimer + &quot;&amp;lt;/div&amp;gt;&quot; | Out-File -Encoding utf8 $output_file
+ }
+
+#--------------------------------------------------------------------
+#PUSH SIGNATURES TO OFFICE 365
+
+#connect to O365 tenant
+$MSEOLadminuser = &quot;user@mydomain.onmicrosoft.com&quot;
+$MSEOLPasswordFile = (&quot;C:\path\$MSEOLadminuser-ExchangeOnline.txt&quot;)
+ if (!(Test-Path -Path $MSEOLPasswordFile))
+ {
+ LogWrite &quot;You don't have an admin password assigned for $MSEOLadminuser, please provide the password followed with enter below:&quot;
+ Read-Host -assecurestring | convertfrom-securestring | out-file $MSEOLpasswordfile
+ }
+$MSEOLpassword = get-content $MSEOLPasswordFile | convertto-securestring -ErrorAction Stop
+$MSEOLcredentials = new-object -typename System.Management.Automation.PSCredential -argumentlist $MSEOLadminuser,$MSEOLpassword -ErrorAction Stop
+$MSEOLSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -credential $MSEOLcredentials -Authentication Basic -AllowRedirection -ErrorAction Stop
+
+Import-PSSession $MSEOLSession -ErrorAction Stop 
+ 
+#Get a list of all the filenames in the target folder
+$sig_files = Get-ChildItem -Path $save_location
+ 
+#Now push the html to the users signature
+foreach ($item in $sig_files) {
+ 
+ $user_name = $($item.Basename) + $email_domain
+ $filename = $save_location + $($item.Basename) + &quot;.htm&quot;
+ 
+ LogWrite &quot;Now attempting to set signature for $user_name&quot;
+ set-mailboxmessageconfiguration -identity $user_name -signaturehtml (get-content $filename) -autoaddsignature $true 
+}
+ 
+#disconnect O365 connection
+Remove-PSSession $MSEOLSession
+
+
+</pre>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>
